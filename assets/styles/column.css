@@ -1,0 +1,228 @@
+.column-wrapper {
+    width: 100%;
+    margin: 0 auto;
+    background-color: #A0A8B6;
+}
+
+.column {
+    display: flex;
+    /* max-width: 127.6rem; */
+    width: 90%;
+    flex-direction: column;
+    align-items: flex-start;
+    gap: 8rem;
+    margin: 0 auto;
+    padding: 12rem 5rem;
+}
+
+.column-title {
+    gap: 1.2rem;
+}
+
+.column-title p {
+    color: white;
+    font-family: "Noto Sans JP";
+    font-size: 1.2rem;
+    font-weight: 700;
+}
+
+.column-title h3 {
+    color: white;
+    font-size: 5rem;
+    font-weight: 600;
+}
+
+.column-card-wrapper {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 3.2rem;
+    width: 100%;
+}
+
+.column-card {
+    height: auto;
+    border-radius: 0.5rem;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+    width: 100%;
+    background-color: white;
+    transition: all .3s ease;
+}
+.column-card:hover {
+    scale: 1.1;
+    cursor: pointer;
+}
+
+.column-card-image {
+    width: 100%;
+    object-fit: cover;
+    border-top-right-radius: 0.5rem;
+    border-top-left-radius: 0.5rem;
+    margin-bottom: 0;
+    padding: 3.2rem 8.2rem 3.5rem 8.2rem;
+}
+
+.column-card h4 {
+    margin-top: 0;
+    border-top: 1px solid #012866;
+    border-bottom: 1px solid #012866;
+    color: #012866;
+    font-family: "Noto Sans JP";
+    font-size: 16px;
+    font-weight: 700;
+    letter-spacing: 0.8px;
+    width: 100%;
+    padding: 1.4rem 1.8rem;
+    box-sizing: border-box;
+}
+
+.column-tags {
+    display: flex;
+    gap: 1.6rem;
+    flex-wrap: wrap;
+    margin: 1.5rem 2.7rem;
+}
+
+.column-tags p {
+    padding: 0;
+    color: #012866;
+    text-align: justify;
+    font-size: 12px;
+    font-weight: 700;
+    letter-spacing: 0.6px;
+}
+
+.column-link {
+    margin-left: auto;
+    display: flex;
+    padding: 20px 32px;
+    justify-content: center;
+    align-items: center;
+    gap: 16px;
+    cursor: pointer;
+}
+
+/* .column-link a {
+    color: #ffffff;
+    text-decoration: none;
+    font-size: 14px;
+    font-weight: 700;
+    line-height: normal;
+} */
+
+.column-link .column-button {
+    text-decoration: none;
+    display: inline-flex;
+    justify-content: flex-start;
+    align-items: center;
+    cursor: pointer;
+    border: none;
+    background-color: transparent;
+    font-size: 14px; 
+    font-style: normal;
+    font-weight: 500;
+    color: white;
+    padding: 0 32px;
+    gap: 0;
+    position: relative; 
+    transition: all 0.3s ease;
+}
+
+.column-link .column-button .column-bg-div {
+    position: absolute;
+    top: 50%; 
+    left: 50%;
+    width: 37px; 
+    height: 37px;
+    background-color: white;
+    border-radius: 50%;
+    z-index: -1; 
+    transform: translate(-50%, -50%); 
+    transition: all 0.3s ease;
+    opacity: 0; 
+    margin-left: 23px;
+}
+
+.column-link .column-button svg {
+    position: relative;
+    z-index: 1;
+}
+
+.column-link .column-button span {
+    display: flex;
+    align-items: center;
+    position: relative;
+    z-index: 1;
+    transition: color 0.3s ease;
+    gap: 16px;
+}
+
+.column-link .column-button:hover .column-bg-div {
+    width: 110px; 
+    height: 110px; 
+    opacity: 1; 
+    
+}
+
+.column-link .column-button:hover span {
+    color: #012866;
+}
+
+/* Responsive */
+@media (max-width: 1024px) {
+    .column-card-wrapper {
+        grid-template-columns: repeat(3, 1fr);
+    }
+}
+
+@media (max-width: 1100px) {
+    .column-card-image {
+        padding: 1.5rem 2.3rem;
+    }
+}
+
+@media (max-width: 768px) {
+    .column-card-wrapper {
+        grid-template-columns: repeat(1, 1fr);
+        max-width: 50rem;
+        width: 100%;
+        margin: 0 auto;
+    }
+
+    .column-card-image {
+        padding: 2.5rem 5rem;
+    }
+}
+
+@media (max-width: 671px) {
+    .column-card-wrapper {
+        grid-template-columns: repeat(1, 1fr);
+    }
+}
+
+@media (max-width: 450px) {
+    .column-card-image {
+        padding: 1.5rem 2.3rem;
+    }
+    .column {
+        padding: 2rem;
+        gap: 3rem;
+    }
+}
+
+@media (max-width: 425px) {
+    .column-card-wrapper {
+        grid-template-columns: repeat(1, 1fr);
+    }
+}
+
+@media (max-width: 375px) {
+    .column-card-wrapper {
+        grid-template-columns: repeat(1, 1fr);
+    }
+}
+
+@media (max-width: 320px) {
+    .column-card-wrapper {
+        grid-template-columns: repeat(1, 1fr);
+    }
+}

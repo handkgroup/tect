@@ -1,0 +1,24 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+html{
+    font-size: 62.5%;
+}
+
+body {
+  font-family: "Noto Sans JP", sans-serif;
+  font-optical-sizing: auto;
+}
+
+:root{
+    --mainBlue: #012866;
+    --font_color: #ffffff;
+    --darker_font-color: #f8f8f8;
+}
+
+.main_section{
+    width: 90%;
+    margin: 0 auto;
+}

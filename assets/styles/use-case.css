@@ -1,0 +1,228 @@
+.use-case-wrapper {
+    width: 100%;
+    margin: 0 auto;
+    padding: 0 2rem;
+}
+
+.use-case {
+    display: flex;
+    /* max-width: 127.6rem; */
+    width: 90%;
+    padding: 14rem 0;
+    flex-direction: column;
+    align-items: flex-start;
+    gap: 8rem;
+    margin: 0 auto;
+}
+
+.case-title {
+    gap: 1.2rem;
+}
+
+.case-title p {
+    color: #012866;
+    font-family: "Noto Sans JP";
+    font-size: 12px;
+    font-weight: 700;
+    line-height: 160%;
+}
+
+.case-title h3 {
+    color: #012866;
+    font-size: 50px;
+    font-weight: 600;
+    line-height: 110%;
+}
+
+.case-card-wrapper {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 3.2rem;
+    width: 100%;
+}
+
+.case-card {
+    height: auto;
+    border-radius: 0.5rem;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+    width: 100%;
+    transition: all .3s ease;
+}
+.case-card:hover {
+    scale: 1.1;
+    cursor: pointer;
+}
+
+.case-card-image {
+    width: 100%;
+    object-fit: cover;
+    border-top-right-radius: 0.5rem;
+    border-top-left-radius: 0.5rem;
+    margin-bottom: 0;
+    border-bottom: 1px solid #012866;
+}
+
+.case-card h4 {
+    margin-top: 0;
+    border-top: none;
+    border-bottom: 1px solid #012866;
+    color: #012866;
+    font-family: "Noto Sans JP";
+    font-size: 16px;
+    font-weight: 700;
+    letter-spacing: 0.8px;
+    width: 100%;
+    padding: 1.5rem 2.7rem;
+    box-sizing: border-box;
+}
+
+.case-card p {
+    color: #232323;
+    font-family: "Noto Sans JP";
+    font-size: 14px;
+    font-weight: 500;
+    line-height: 180%;
+    letter-spacing: 0.7px;
+    width: 100%;
+    padding: 0.8rem 3rem;
+}
+
+.case-card a {
+    display: inline-flex;
+    padding: 4px 16px;
+    align-items: center;
+    gap: 3px;
+    border-radius: 36px;
+    border: 1px solid #012866;
+    color: #012866;
+    font-family: "Noto Sans JP";
+    font-size: 12px;
+    font-weight: 500;
+    line-height: 180%;
+    letter-spacing: 0.6px;
+    text-decoration: none;
+    margin: 1.5rem  1.5rem;
+}
+
+.case-card a img {
+    width: 1.4rem;
+    height: auto;
+}
+
+.case-link {
+    margin-left: auto;
+    display: flex;
+    padding: 20px 32px;
+    justify-content: center;
+    align-items: center;
+    gap: 16px;
+    cursor: pointer;
+}
+
+/* .case-link a {
+    color: #012866;
+    text-decoration: none;
+    font-size: 16px;
+} */
+
+.case-link .use-case-button {
+    text-decoration: none;
+    display: inline-flex;
+    justify-content: flex-start;
+    align-items: center;
+    cursor: pointer;
+    border: none;
+    background-color: transparent;
+    font-size: 14px; 
+    font-style: normal;
+    font-weight: 500;
+    color: #012866;
+    padding: 0 32px;
+    gap: 0;
+    position: relative; 
+    transition: all 0.3s ease;
+}
+
+.case-link .use-case-button .use-case-bg-div {
+    position: absolute;
+    top: 50%; 
+    left: 50%;
+    width: 37px; 
+    height: 37px;
+    background-color: #012866;
+    border-radius: 50%;
+    z-index: -1; 
+    transform: translate(-50%, -50%); 
+    transition: all 0.3s ease;
+    opacity: 0; 
+    margin-left: 25px;
+}
+
+.case-link .use-case-button svg {
+    position: relative;
+    z-index: 1;
+}
+
+.case-link .use-case-button span {
+    display: flex;
+    align-items: center;
+    position: relative;
+    z-index: 1;
+    transition: color 0.3s ease;
+    gap: 16px;
+}
+
+.case-link .use-case-button:hover .use-case-bg-div {
+    width: 115px; 
+    height: 115px; 
+    opacity: 1; 
+    
+}
+
+.case-link .use-case-button:hover span {
+    color: white;
+}
+
+/* Responsive */
+@media (max-width: 1024px) {
+    .case-card-wrapper {
+        grid-template-columns: repeat(3, 1fr);
+    }
+    .use-case {
+        padding: 5rem 0;
+    }
+}
+
+
+@media (max-width: 768px) {
+    .case-card-wrapper {
+        grid-template-columns: repeat(1, 1fr);
+        max-width: 50rem;
+        width: 100%;
+        margin: 0 auto;
+    }
+}
+
+@media (max-width: 671px) {
+    .case-card-wrapper {
+        grid-template-columns: repeat(1, 1fr);
+    }
+}
+
+@media (max-width: 425px) {
+    .case-card-wrapper {
+        grid-template-columns: repeat(1, 1fr);
+    }
+}
+
+@media (max-width: 375px) {
+    .case-card-wrapper {
+        grid-template-columns: repeat(1, 1fr);
+    }
+}
+
+@media (max-width: 320px) {
+    .case-card-wrapper {
+        grid-template-columns: repeat(1, 1fr);
+    }
+}

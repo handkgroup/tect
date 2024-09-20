@@ -1,0 +1,227 @@
+.top-main {
+  position: relative;
+  width: 100%;
+  height: 80vh;
+}
+
+.fv_section {
+  position: relative;
+  display: flex;
+  flex-direction: column;
+  min-height: 100vh;
+  padding-top: 10rem;
+}
+.inner_shadow {
+  transition: all 0.3s ease;
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  z-index: 2;
+}
+.inner_shadow.active {
+  background-color: rgba(0, 21, 55, 0.5);
+  box-shadow: inset 0 0 3rem rgba(0, 21, 55, 0.5);
+}
+
+.card {
+  width: 100%;
+  height: 100%;
+  position: absolute;
+  overflow: hidden;
+  border-radius: 1rem;
+}
+
+.card.top-left {
+  top: 0;
+  left: 0;
+  width: 10%;
+  height: 25%;
+}
+
+.card.main-center {
+  top: 50%;
+  left: 50%;
+  width: 70%;
+  height: 80%;
+  transform: translate(-50%, -50%);
+  display: flex;
+  gap: 0.8rem;
+}
+
+.card.main-center p {
+  writing-mode: vertical-lr;
+  color: var(--mainBlue, #012866);
+  font-size: 2.3rem;
+  font-weight: 500;
+}
+.card.main-center .right_p {
+  text-align: end;
+}
+
+.card.bottom-right {
+  bottom: 0;
+  right: 0;
+  width: 10%;
+  height: 25%;
+}
+
+.image-wrapper {
+  position: relative;
+  width: 100%;
+  height: 100%;
+  overflow: hidden;
+  border-radius: 2rem;
+}
+
+.image-wrapper img {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  z-index: 0;
+  opacity: 0;
+  transition: opacity 1s ease, width 1s ease; /* Kenglik va sekin o'chirish */
+  width: 100%; /* To'liq kenglik */
+  clip-path: inset(0); /* To'liq ko'rinadi */
+}
+
+.image-wrapper img.active {
+  opacity: 1;
+  width: 100%; /* To'liq kenglikda paydo bo'ladi */
+  z-index: 1;
+}
+
+.image-wrapper img.prev {
+  opacity: 1;
+  width: 0%; /* Chapdan o'ngga qisqaradi */
+  z-index: 2;
+}
+
+.top-main .titles {
+  position: absolute;
+  transform: translate(-50%, -75%);
+  bottom: 0;
+  left: 50%;
+  z-index: 3;
+}
+
+.top-main .titles h2 {
+  color: #012866;
+  text-align: center;
+  font-size: 7rem;
+  font-weight: 600;
+}
+.top-main .titles p {
+  color: #012866;
+  text-align: center;
+  font-size: 2.3rem;
+  font-weight: 700;
+}
+.main_last-part {
+  /* position: absolute; */
+  /* bottom: 0; */
+  width: 100%;
+  /* padding: 3.2rem 2rem; */
+  display: flex;
+  justify-content: center;
+  border-top: 0.1rem solid var(--mainBlue);
+  background-color: rgba(255, 255, 255, 0.9);
+  z-index: 3;
+  /* transform: translate(0, 100%); */
+}
+.main_last-part .last_container {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 8rem;
+  width: 90%;
+  /* max-width: 90rem; */
+  padding: 2.1rem 0;
+}
+
+.main_last-part .last_container p {
+  color: var(--mainBlue, #012866);
+  font-size: 1.6rem;
+  font-weight: 700;
+}
+
+.main_last-part .last_container a {
+  background-color: var(--mainBlue, #012866);
+  color: #fff;
+  text-align: center;
+  font-size: 1.4rem;
+  font-weight: 700;
+  text-decoration: none;
+  padding: 10px 24px;
+  border-radius: 5px;
+  border: 1px solid var(--mainBlue, #012866);
+}
+.main_last-part .last_container a:hover {
+  color: var(--mainBlue, #012866);
+  background-color: #fff;
+}
+@media (max-width: 1440px) {
+  .card.main-center p {
+    font-size: 1.3rem;
+  }
+  .top-main .titles h2 {
+    font-size: 5rem;
+  }
+  .top-main .titles p {
+    font-size: 1.8rem;
+  }
+}
+@media (max-width: 1300px) {
+  .card.main-center .right_p {
+    text-align: start;
+  }
+  .card.main-center .left_p {
+    text-align: end;
+  }
+}
+
+@media (max-width: 1000px) {
+  .card.main-center {
+    padding: 0 2rem;
+  }
+  .card.top-left {
+    width: 15%;
+  }
+  .card.bottom-right {
+    width: 15%;
+  }
+  .main_last-part .last_container {
+    flex-direction: column;
+    gap: 3rem;
+  }
+}
+
+@media (max-width: 768px) {
+  .card.main-center {
+    width: 90%;
+    height: 80%;
+  }
+  .card.top-left {
+    width: 20%;
+  }
+  .card.bottom-right {
+    width: 20%;
+  }
+}
+
+@media (max-width: 425px) {
+  .card.main-center {
+    width: 100%;
+    height: 80%;
+  }
+  .card.top-left {
+    width: 30%;
+  }
+  .card.bottom-right {
+    width: 30%;
+  }
+}

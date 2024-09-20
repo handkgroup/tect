@@ -1,0 +1,211 @@
+body {
+    font-family: 'Arial', sans-serif;
+    background-color: #f0f0f0;
+}
+
+.contact-section {
+    background: linear-gradient(to bottom, #012866 50%, #A0A8B6 50%);
+    padding: 6rem 2rem;
+    display: flex;
+    justify-content: center;
+}
+
+.contact-container {
+    background-color: white;
+    padding: 10.7rem;
+    border-radius: 0.8rem;
+    box-shadow: 0 0.4rem 1rem rgba(0, 0, 0, 0.1);
+    /* max-width: 106.4rem; */
+    width: 90%;
+    text-align: left;
+}
+
+.contact-header h2 {
+    color: #012866;
+    font-size: 1.2rem;
+    font-style: normal;
+    font-weight: 700;
+    padding-bottom: 1.2rem;
+}
+
+.contact-header h1 {
+    color: #012866;
+    font-feature-settings: 'liga' off, 'clig' off;
+    font-size: 5rem;
+    font-weight: 600;
+    padding-bottom: 1.9rem;
+}
+
+.contact-header p {
+    color: #012866;
+    font-size: 1.8rem;
+    font-weight: 700;
+    letter-spacing: 0.9px;
+}
+
+.contact-details {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    gap: 2rem;
+    text-align: center;
+}
+
+.contact-phone,
+.contact-web {
+    width: 48%;
+    padding: 2rem;
+    text-align: center;
+}
+
+.icon {
+    display: flex;
+    align-items: center;
+    gap: 1rem;
+    font-size: 1.8rem;
+    color: #1b4d89;
+    margin-bottom: 2rem;
+    text-align: right;
+    justify-content: center;
+}
+
+.icon p {
+    color: #012866;
+    text-align: center;
+    font-size: 1.8rem;
+    font-weight: 700;
+    line-height: normal;
+}
+
+.phone-info p {
+    color: #000;
+    text-align: center;
+    font-size: 2.4rem;
+    font-weight: 700;
+    line-height: normal;
+
+}
+
+.phone-info p:nth-child(2) {
+    color: #000;
+    text-align: center;
+    font-family: Inter;
+    font-size: 1.5rem;
+    font-style: normal;
+    font-weight: 400;
+    line-height: normal;
+    padding-top: 1.6rem;
+}
+
+.phone-info strong {
+    color: #000;
+    text-align: center;
+    font-size: 3.2rem;
+    font-weight: 700;
+    line-height: normal;
+    padding-left: 1rem;
+}
+
+.web-inquiry {
+    text-align: center;
+    
+    flex-shrink: 0;
+    
+}
+
+.inquiry-button {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    border-radius: 0.5rem;
+    border: 0.2rem solid transparent;
+    gap: 1rem;
+    padding: 2.5rem 2rem;
+    background-color: #012866;
+    color: #FFF;
+    text-align: center;
+    font-size: 1.8rem;
+    font-weight: 700;
+    text-decoration: none;
+}
+
+/* .web-inquiry:hover {
+    
+    color: #012866;
+} */
+
+.web-inquiry:hover .inquiry-button {
+    cursor: pointer;
+    color: #012866;
+    background-color: #fff;
+    border: 0.2rem solid #012866;
+}
+
+/* Responsive Design */
+
+@media (max-width: 880px) {
+    .phone-info strong {
+        font-size: 2.8rem;
+    }
+
+    .contact-phone,
+    .contact-web {
+        width: 48%;
+        padding: 1.5rem;
+        text-align: center;
+    }
+
+    .contact-container {
+        padding: 8rem;
+    }
+}
+
+@media (max-width: 768px) {
+    .contact-details {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .contact-phone,
+    .contact-web {
+        width: 100%;
+        text-align: center;
+    }
+
+    .web-inquiry {
+        max-width: 36.8rem;
+        width: 100%;
+        margin: 0 auto;
+    }
+}
+
+@media (max-width: 500px){
+    .contact-container {
+        padding: 6rem 2rem;
+    }
+
+    .contact-header h2 {
+        font-size: 1rem;
+    }
+    
+    .contact-header h1 {
+        font-size: 3.6rem;
+    }
+    
+    .contact-header p {
+        font-size: 1.3rem;
+    }
+
+    .icon p {
+        font-size: 1.6rem;
+    }
+
+    .phone-info p:nth-child(2) {
+        font-size: 1.3rem;
+    }
+
+    .inquiry-button {
+        font-size: 1.6rem;
+    }
+}

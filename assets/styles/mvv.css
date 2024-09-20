@@ -1,0 +1,155 @@
+
+.section-MVV-wrapper {
+    background-image: url('./image/IT-kikagaku.svg');
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    width: 100%;
+    height: auto;
+    flex-shrink: 0;
+    margin: 0 auto;
+    /* margin-top: 9rem; */
+    background-color: #A0A8B6;
+}
+
+.section-MVV {
+    width: 100%;
+    height: auto;
+    margin: 0 auto;
+    padding: 12.5rem 0;
+}
+
+.section-MVV::after {
+    content: "";
+    display: table;
+    clear: both;
+}
+
+.section-MVV h3 {
+    text-align: center;
+    color: #012866;
+    font-size: 1.8rem;
+    font-weight: 500;
+    margin-bottom: 4.8rem;
+}
+
+.MVV-text {
+    display: flex;
+    
+    width: 100%;
+    flex-direction: column;
+    align-items: center;
+    gap: 4rem;
+    margin: 0 auto;
+}
+
+.MVV-text h2 {
+    max-width: 90%;
+    color: var(--White, #FFF);
+    text-align: center;
+    text-shadow: 0px 2px 12px rgba(0, 0, 0, 0.16);
+    font-size: 3.2rem;
+    font-weight: 600;
+}
+
+.MVV-text p {
+    max-width: 90%;
+    color: var(--White, #FFF);
+    text-shadow: 0 0.2rem 1.2rem rgba(0, 0, 0, 0.16);
+    font-size: 1.5rem;
+    font-weight: 500;
+    line-height: 3rem;
+}
+
+.MVV-button {
+    display: flex;
+    align-items: center;
+    justify-content: flex-end;
+    gap: 1.6rem;
+    margin-top: 5rem;
+    cursor: pointer;
+    text-align: right;
+}
+
+.MVV-button .button {
+    text-decoration: none;
+    display: inline-flex;
+    justify-content: flex-start;
+    align-items: center;
+    cursor: pointer;
+    border: none;
+    background-color: transparent;
+    font-size: 16px; 
+    font-weight: 500;
+    color: #012866;
+    padding: 0 32px;
+    gap: 0;
+    position: relative; 
+    transition: all 0.3s ease;
+}
+.MVV-button .button .bg-div {
+    position: absolute;
+    top: 50%; 
+    left: 50%;
+    width: 37px; 
+    height: 37px;
+    background-color: #012866;
+    border-radius: 50%;
+    z-index: -1; 
+    transform: translate(-50%, -50%); 
+    transition: all 0.3s ease;
+    opacity: 0; 
+    margin-left: 18px;
+}
+
+.MVV-button .button svg {
+    position: relative;
+    z-index: 1;
+}
+
+.MVV-button .button span {
+    display: flex;
+    align-items: center;
+    position: relative;
+    z-index: 1;
+    transition: color 0.3s ease;
+    gap: 16px;
+}
+
+.MVV-button .button:hover .bg-div {
+    width: 90px; 
+    height: 90px; 
+    opacity: 1; 
+    
+}
+
+.MVV-button .button:hover span {
+    color: white;
+}
+
+
+@media(max-width: 768px) {
+    .MVV-text p {
+        margin: 0 auto;
+        padding: 0 2rem;
+    }
+
+    .MVV-text h2 {
+        
+        margin: 0 auto;
+        font-size: 2.8rem;
+    }
+
+    .MVV-button{
+        margin-right: 2rem;
+    }
+    .section-MVV {
+        padding: 5rem 5rem;
+    }
+}
+
+@media(max-width: 425px){
+    .section-MVV {
+        padding: 4rem 2rem;
+    }
+}
