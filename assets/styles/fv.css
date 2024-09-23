@@ -10,6 +10,11 @@
   flex-direction: column;
   min-height: 100vh;
   padding-top: 10rem;
+  /* background: url("../images/main_bg-all.png"); */
+  background: url("../images/main_bg-all.png") #fff 50% / cover no-repeat;
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: cover;
 }
 .inner_shadow {
   transition: all 0.3s ease;
@@ -83,23 +88,29 @@
   height: 100%;
   object-fit: cover;
   z-index: 0;
-  opacity: 0;
-  transition: opacity 1s ease, width 1s ease; /* Kenglik va sekin o'chirish */
-  width: 100%; /* To'liq kenglik */
-  clip-path: inset(0); /* To'liq ko'rinadi */
+  transform: translateX(100%); /* Rasm oldin ekranning o'ng tomonida */
+  transition: transform 1s ease; /* Faqat harakatlanish animatsiyasi */
 }
 
 .image-wrapper img.active {
-  opacity: 1;
-  width: 100%; /* To'liq kenglikda paydo bo'ladi */
-  z-index: 1;
+  z-index: 2;
+  transform: translateX(0); /* Aktiv rasm ekranning o'rtasida bo'ladi */
 }
 
 .image-wrapper img.prev {
-  opacity: 1;
-  width: 0%; /* Chapdan o'ngga qisqaradi */
-  z-index: 2;
+  z-index: 1;
+  transform: translateX(-100%); /* Oldingi rasm chapga chiqadi */
 }
+
+.image-wrapper img.next {
+  z-index: 0;
+  transform: translateX(100%); /* Keyingi rasm joyida qoladi */
+}
+
+
+
+
+
 
 .top-main .titles {
   position: absolute;
@@ -122,25 +133,24 @@
   font-weight: 700;
 }
 .main_last-part {
-  /* position: absolute; */
-  /* bottom: 0; */
   width: 100%;
-  /* padding: 3.2rem 2rem; */
   display: flex;
   justify-content: center;
   border-top: 0.1rem solid var(--mainBlue);
+  background: url("../images/main_bg-all.png") #fff 50% / cover no-repeat;
+  background-repeat: no-repeat;
+  background-position: bottom;
+  background-size: cover;
   background-color: rgba(255, 255, 255, 0.9);
   z-index: 3;
-  /* transform: translate(0, 100%); */
 }
 .main_last-part .last_container {
+  width: 70%;
   display: flex;
   align-items: center;
   justify-content: space-between;
   gap: 8rem;
-  width: 90%;
-  /* max-width: 90rem; */
-  padding: 2.1rem 0;
+  padding: 3.2rem 0;
 }
 
 .main_last-part .last_container p {
@@ -150,8 +160,8 @@
 }
 
 .main_last-part .last_container a {
-  background-color: var(--mainBlue, #012866);
-  color: #fff;
+  background-color: var(--font_color, #fff);
+  color: var(--mainBlue, #012866);
   text-align: center;
   font-size: 1.4rem;
   font-weight: 700;
@@ -161,8 +171,8 @@
   border: 1px solid var(--mainBlue, #012866);
 }
 .main_last-part .last_container a:hover {
-  color: var(--mainBlue, #012866);
-  background-color: #fff;
+  color: var(--font_color, #fff);
+  background-color: var(--mainBlue, #012866);
 }
 @media (max-width: 1440px) {
   .card.main-center p {
