@@ -88,29 +88,24 @@
   height: 100%;
   object-fit: cover;
   z-index: 0;
-  transform: translateX(100%); /* Rasm oldin ekranning o'ng tomonida */
-  transition: transform 1s ease; /* Faqat harakatlanish animatsiyasi */
+  transform: translateX(100%);
+  transition: transform 1s ease;
 }
 
 .image-wrapper img.active {
   z-index: 2;
-  transform: translateX(0); /* Aktiv rasm ekranning o'rtasida bo'ladi */
+  transform: translateX(0);
 }
 
 .image-wrapper img.prev {
   z-index: 1;
-  transform: translateX(-100%); /* Oldingi rasm chapga chiqadi */
+  transform: translateX(-100%);
 }
 
 .image-wrapper img.next {
   z-index: 0;
-  transform: translateX(100%); /* Keyingi rasm joyida qoladi */
+  transform: translateX(100%);
 }
-
-
-
-
-
 
 .top-main .titles {
   position: absolute;
@@ -166,9 +161,9 @@
   font-size: 1.4rem;
   font-weight: 700;
   text-decoration: none;
-  padding: 10px 24px;
-  border-radius: 5px;
-  border: 1px solid var(--mainBlue, #012866);
+  padding: 1rem 2.4rem;
+  border-radius: .5rem;
+  border: .1rem solid var(--mainBlue, #012866);
 }
 .main_last-part .last_container a:hover {
   color: var(--font_color, #fff);

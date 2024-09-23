@@ -22,16 +22,14 @@
 .case-title p {
     color: #012866;
     font-family: "Noto Sans JP";
-    font-size: 12px;
+    font-size: 1.2rem;
     font-weight: 700;
-    line-height: 160%;
 }
 
 .case-title h3 {
     color: #012866;
-    font-size: 50px;
+    font-size: 5rem;
     font-weight: 600;
-    line-height: 110%;
 }
 
 .case-card-wrapper {
@@ -44,7 +42,7 @@
 .case-card {
     height: auto;
     border-radius: 0.5rem;
-    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+    box-shadow: 0 .4rem .8rem rgba(0, 0, 0, 0.2);
     width: 100%;
     transition: all .3s ease;
     background-color: #fff;
@@ -61,18 +59,17 @@
     border-top-right-radius: 0.5rem;
     border-top-left-radius: 0.5rem;
     margin-bottom: 0;
-    border-bottom: 1px solid #012866;
+    border-bottom: .1rem solid #012866;
 }
 
 .case-card h4 {
     margin-top: 0;
     border-top: none;
-    border-bottom: 1px solid #012866;
+    border-bottom: .1rem solid #012866;
     color: #012866;
     font-family: "Noto Sans JP";
-    font-size: 16px;
+    font-size: 1.6rem;
     font-weight: 700;
-    letter-spacing: 0.8px;
     width: 100%;
     padding: 1.5rem 2.7rem;
     box-sizing: border-box;
@@ -81,27 +78,23 @@
 .case-card p {
     color: #232323;
     font-family: "Noto Sans JP";
-    font-size: 14px;
+    font-size: 1.4rem;
     font-weight: 500;
-    line-height: 180%;
-    letter-spacing: 0.7px;
     width: 100%;
     padding: 0.8rem 3rem;
 }
 
 .case-card a {
     display: inline-flex;
-    padding: 4px 16px;
+    padding: .4rem 1.6rem;
     align-items: center;
-    gap: 3px;
-    border-radius: 36px;
-    border: 1px solid #012866;
+    gap: .3rem;
+    border-radius: 3.6rem;
+    border: .1rem solid #012866;
     color: #012866;
     font-family: "Noto Sans JP";
-    font-size: 12px;
+    font-size: 1.2rem;
     font-weight: 500;
-    line-height: 180%;
-    letter-spacing: 0.6px;
     text-decoration: none;
     margin: 1.5rem  1.5rem;
 }
@@ -114,18 +107,12 @@
 .case-link {
     margin-left: auto;
     display: flex;
-    padding: 20px 32px;
+    padding: 2rem 3.2rem;
     justify-content: center;
     align-items: center;
-    gap: 16px;
+    gap: 1.6rem;
     cursor: pointer;
 }
-
-/* .case-link a {
-    color: #012866;
-    text-decoration: none;
-    font-size: 16px;
-} */
 
 .case-link .use-case-button {
     text-decoration: none;
@@ -135,10 +122,10 @@
     cursor: pointer;
     border: none;
     background-color: transparent;
-    font-size: 14px; 
+    font-size: 1.4rem; 
     font-weight: 700;
     color: #012866;
-    padding: 0 32px;
+    padding: 0 3.2rem;
     position: relative; 
     transition: all 0.3s ease;
 }
@@ -147,15 +134,15 @@
     position: absolute;
     top: 50%; 
     left: 50%;
-    width: 37px; 
-    height: 37px;
+    width: 3.7rem; 
+    height: 3.7rem;
     background-color: #012866;
     border-radius: 50%;
     z-index: -1; 
     transform: translate(-50%, -50%); 
     transition: all 0.3s ease;
     opacity: 0; 
-    margin-left: 25px;
+    margin-left: 2.5rem;
 }
 
 .case-link .use-case-button svg {
@@ -169,12 +156,12 @@
     position: relative;
     z-index: 1;
     transition: color 0.3s ease;
-    gap: 16px;
+    gap: 1.6rem;
 }
 
 .case-link .use-case-button:hover .use-case-bg-div {
-    width: 115px; 
-    height: 115px; 
+    width: 11.5rem; 
+    height: 11.5rem; 
     opacity: 1; 
     
 }

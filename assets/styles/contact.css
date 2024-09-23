@@ -1,11 +1,8 @@
-body {
-    font-family: 'Arial', sans-serif;
-    background-color: #f0f0f0;
-}
-
 .contact-section {
-    background: linear-gradient(to bottom, #012866 50%, #A0A8B6 50%);
-    padding: 6rem 2rem;
+    background: url("../images/main_bg-all.png"), linear-gradient(to bottom, #012866 50%, #A0A8B6 50%);
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
     display: flex;
     justify-content: center;
 }
@@ -15,22 +12,20 @@ body {
     padding: 10.7rem;
     border-radius: 0.8rem;
     box-shadow: 0 0.4rem 1rem rgba(0, 0, 0, 0.1);
-    /* max-width: 106.4rem; */
-    width: 90%;
+    width: 70%;
     text-align: left;
+    margin-top: 14rem;
 }
 
 .contact-header h2 {
     color: #012866;
     font-size: 1.2rem;
-    font-style: normal;
     font-weight: 700;
     padding-bottom: 1.2rem;
 }
 
 .contact-header h1 {
     color: #012866;
-    font-feature-settings: 'liga' off, 'clig' off;
     font-size: 5rem;
     font-weight: 600;
     padding-bottom: 1.9rem;
@@ -40,7 +35,6 @@ body {
     color: #012866;
     font-size: 1.8rem;
     font-weight: 700;
-    letter-spacing: 0.9px;
 }
 
 .contact-details {
@@ -53,9 +47,14 @@ body {
 
 .contact-phone,
 .contact-web {
-    width: 48%;
+    width: 50%;
     padding: 2rem;
     text-align: center;
+}
+.contact-web{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
 }
 
 .icon {
@@ -77,44 +76,36 @@ body {
     line-height: normal;
 }
 
-.phone-info p {
-    color: #000;
-    text-align: center;
+.phone-info .phone_number{
+    font-family: Lexend;
     font-size: 2.4rem;
     font-weight: 700;
-    line-height: normal;
-
+    display: flex;
+    gap: 1rem;
+    align-items: center;
+    text-align: center;
+}
+.phone-info .phone_number strong{
+    font-size: 3.2rem;
 }
 
-.phone-info p:nth-child(2) {
-    color: #000;
+.phone-info .time_and_date {
     text-align: center;
     font-family: Inter;
     font-size: 1.5rem;
-    font-style: normal;
     font-weight: 400;
-    line-height: normal;
-    padding-top: 1.6rem;
-}
-
-.phone-info strong {
-    color: #000;
-    text-align: center;
-    font-size: 3.2rem;
-    font-weight: 700;
-    line-height: normal;
-    padding-left: 1rem;
 }
 
 .web-inquiry {
+    width: 100%;
     text-align: center;
-    
     flex-shrink: 0;
-    
 }
 
 .inquiry-button {
     display: flex;
+    width: 100%;
+    max-width: 35rem;
     flex-direction: column;
     justify-content: center;
     align-items: center;
@@ -130,11 +121,6 @@ body {
     text-decoration: none;
 }
 
-/* .web-inquiry:hover {
-    
-    color: #012866;
-} */
-
 .web-inquiry:hover .inquiry-button {
     cursor: pointer;
     color: #012866;
@@ -147,13 +133,6 @@ body {
 @media (max-width: 880px) {
     .phone-info strong {
         font-size: 2.8rem;
-    }
-
-    .contact-phone,
-    .contact-web {
-        width: 48%;
-        padding: 1.5rem;
-        text-align: center;
     }
 
     .contact-container {

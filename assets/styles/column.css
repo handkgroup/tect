@@ -1,7 +1,6 @@
 .column-wrapper {
     width: 100%;
     margin: 0 auto;
-    /* background-color: #A0A8B6; */
     background: url("../images/main_bg-all.png") #A0A8B6;
     background-repeat: no-repeat;
     background-position: center;
@@ -10,7 +9,6 @@
 
 .column {
     display: flex;
-    /* max-width: 127.6rem; */
     width: 90%;
     flex-direction: column;
     align-items: flex-start;
@@ -46,7 +44,7 @@
 .column-card {
     height: auto;
     border-radius: 0.5rem;
-    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+    box-shadow: 0 .4rem .8rem rgba(0, 0, 0, 0.2);
     width: 100%;
     background-color: white;
     transition: all .3s ease;
@@ -70,8 +68,8 @@
     color: #232323;
     font-size: 1.6rem;
     font-weight: 700;
-    border-top: 1px solid #012866;
-    border-bottom: 1px solid #012866;
+    border-top: .1rem solid #012866;
+    border-bottom: .1rem solid #012866;
     padding: 1.4rem 1.8rem;
 }
 
@@ -86,28 +84,19 @@
     padding: 0;
     color: #012866;
     text-align: justify;
-    font-size: 12px;
+    font-size: 1.2rem;
     font-weight: 700;
-    letter-spacing: 0.6px;
 }
 
 .column-link {
     margin-left: auto;
     display: flex;
-    padding: 20px 32px;
+    padding: 2rem 3.2rem;
     justify-content: center;
     align-items: center;
-    gap: 16px;
+    gap: 1.6rem;
     cursor: pointer;
 }
-
-/* .column-link a {
-    color: #ffffff;
-    text-decoration: none;
-    font-size: 14px;
-    font-weight: 700;
-    line-height: normal;
-} */
 
 .column-link .column-button {
     color: #FFF;
@@ -119,7 +108,7 @@
     align-items: center;
     cursor: pointer;
     border: none;
-    padding: 0 32px;
+    padding: 0 3.2rem;
     position: relative; 
     transition: all 0.3s ease;
 }
@@ -128,15 +117,15 @@
     position: absolute;
     top: 50%; 
     left: 50%;
-    width: 37px; 
-    height: 37px;
+    width: 3.7rem; 
+    height: 3.7rem;
     background-color: white;
     border-radius: 50%;
     z-index: -1; 
     transform: translate(-50%, -50%); 
     transition: all 0.3s ease;
     opacity: 0; 
-    margin-left: 23px;
+    margin-left: 2.3rem;
 }
 
 .column-link .column-button svg {

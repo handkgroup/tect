@@ -1,5 +1,5 @@
 .footer{
-    height: 670px;
+    height: 67rem;
     position: relative;
 }
 
@@ -12,7 +12,10 @@
     width: 100%;
     min-height: 67rem;
     height: fit-content;
-    background-color: #A0A8B6;
+    background: url("../images/main_bg-all.png") #A0A8B6;
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
     position: relative;
     z-index: 2;
     display: flex;
@@ -70,13 +73,12 @@ font-weight: 700;
     width: fit-content;
     display: flex;
     gap: 2rem;
-    /* align-items: center; */
     list-style: none;
 }
 .footer_top .top_right ul li{
     display: flex;
     flex-direction: column;
-    gap: 1.2rem;
+    gap: 2rem;
 }
 
 .footer_top .top_right ul li a{
@@ -138,13 +140,13 @@ font-weight: 600;
 .footer_bottom-text p{
     color: #012866;
 text-align: center;
-text-shadow: 3px 3px 40px rgba(255, 255, 255, 0.79);
+text-shadow: .3rem .3rem 4rem rgba(255, 255, 255, 0.79);
 font-size: 1.8rem;
 font-weight: 700;
 }
 .footer_bottom-text .footer_line{
-    width: 606px;
-    height: 2px;
+    width: 60.6rem;
+    height: .2rem;
     background: #012866;
 }
 .footer_bottom-text img{
@@ -192,7 +194,7 @@ font-weight: 700;
     .footer_bottom-text p{
         color: #012866;
     text-align: center;
-    text-shadow: 3px 3px 40px rgba(255, 255, 255, 0.79);
+    text-shadow: .3rem .3rem 4rem rgba(255, 255, 255, 0.79);
     font-size: 1.6rem;
     font-weight: 700;
     }
