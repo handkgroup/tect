@@ -13,7 +13,7 @@
 }
 
 .section-MVV {
-    width: 100%;
+    width: 45%;
     height: auto;
     margin: 0 auto;
     padding: 12.5rem 0;
@@ -127,6 +127,12 @@
     color: white;
 }
 
+@media(max-width: 1024px){
+    .section-MVV {
+        width: 65%;
+    }
+}
+
 
 @media(max-width: 768px) {
     .MVV-text p {
@@ -144,12 +150,14 @@
         margin-right: 2rem;
     }
     .section-MVV {
-        padding: 5rem 5rem;
+        width: 80%;
+        padding: 5rem 0;
     }
 }
 
 @media(max-width: 425px){
     .section-MVV {
-        padding: 4rem 2rem;
+        padding: 4rem 0;
+        width: 85%;
     }
 }
