@@ -10,6 +10,7 @@
   flex-direction: column;
   height: 100vh;
   padding-top: 10rem;
+  padding-bottom: 5rem;
   background: url("../images/main_bg-all.png") #fff 50% / cover no-repeat;
   background-repeat: no-repeat;
   background-position: center;
