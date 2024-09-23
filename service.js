@@ -1,6 +1,6 @@
 document.addEventListener('DOMContentLoaded', function () {
   const sidebarItems = document.querySelectorAll('#sidebar-items li');
-  const sliderImages = document.querySelectorAll('.slider-wrapper img');
+  const sliderImages = document.querySelectorAll('.slider-wrapper .img_container');
   const dots = document.querySelectorAll('.slider-dots .dot');
   const sliderWrapper = document.querySelector('.slider-wrapper');
   const serviceSection = document.querySelector('.service_sec');

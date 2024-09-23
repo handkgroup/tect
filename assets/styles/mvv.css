@@ -1,6 +1,6 @@
 
 .section-MVV-wrapper {
-    background-image: url('./image/IT-kikagaku.svg');
+    background: url("../images/main_bg-all.png") #A0A8B6;
     background-size: cover;
     background-position: center;
     background-repeat: no-repeat;
