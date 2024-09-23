@@ -8,9 +8,8 @@
   position: relative;
   display: flex;
   flex-direction: column;
-  min-height: 100vh;
+  height: 100vh;
   padding-top: 10rem;
-  /* background: url("../images/main_bg-all.png"); */
   background: url("../images/main_bg-all.png") #fff 50% / cover no-repeat;
   background-repeat: no-repeat;
   background-position: center;
@@ -215,6 +214,9 @@
   }
   .card.bottom-right {
     width: 20%;
+  }
+  .fv_section {
+    height: 60vh;
   }
 }
 
